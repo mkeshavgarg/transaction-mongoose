@@ -1,7 +1,7 @@
 {
   "name": "transaction-mongoose",
-  "version": "0.1.0",
-  "description": "It is a painless transaction system in mongoose to provide atomicity for multi collection updates.",
+  "version": "0.1.1",
+  "description": "Simple transaction system in mongoose to provide atomicity for multi collection updates.",
   "homepage": "https://github.com/mkeshavgarg/transaction-mongoose",
   "main": "index.js",
   "repository": {
@@ -9,6 +9,8 @@
     "url": "https://github.com/mkeshavgarg/transaction-mongoose.git"
   },
   "keywords": [
+    "mongo",
+    "nodejs",
     "domains",
     "mongoose",
     "bluebird"

@@ -1,6 +1,6 @@
-## transaction-mongoose
+# transaction-mongoose
 
-It is a painless transaction system in mongoose to provide atomicity for multi collection updates.
+Simple transaction system in mongoose to provide atomicity for multi collection updates.
 
 ### Features:
 * Enable Transaction – Only enable transaction if necessary.
