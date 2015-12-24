@@ -1,7 +1,7 @@
 {
   "name": "transaction-mongoose",
   "version": "0.1",
-  "description": "painless transaction system in mongoose",
+  "description": "It is a painless transaction system in mongoose to provide atomicity for multi collection updates.",
   "homepage": "https://github.com/mkeshavgarg/transaction-mongoose",
   "main": "index.js",
   "repository": {
