@@ -1,0 +1,26 @@
+{
+  "name": "transaction-mongoose",
+  "version": "0.1",
+  "description": "painless transaction system in mongoose",
+  "homepage": "https://github.com/mkeshavgarg/transaction-mongoose",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkeshavgarg/transaction-mongoose.git"
+  },
+  "keywords": [
+    "domains",
+    "mongoose",
+    "bluebird"
+  ],
+  "author": "Keshav Garg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkeshavgarg/transaction-mongoose/issues"
+  },
+  "dependencies":  {
+    "mongoose": "^4",
+    "bluebird": ">2.9"
+  },
+  "contributors": ["Apoorva Chaturvedi", "Rajnish Srivastava", "Nikhil Garg"]
+}
