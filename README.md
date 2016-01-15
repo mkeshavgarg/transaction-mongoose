@@ -15,6 +15,31 @@ interface/transaction.support.js. It is a sample of transaction layer which will
 In this way you will not have to change your existing request handlers to work with this library and this file will ensure registration of all CRUD queries.
 Now, if error occurs at any stage while serving request, call rollback function to restore all documents to their original state.
 
+Eg:
+
+    var transactionManager = require('transaction-manager');
+
+    transactionManager.enableTransaction as express routes middleware
+
+    transactionManager.enqueue(transactionManager.COMMANDS.CREATE, {'document': doc});
+
+    transactionManager.enqueue(transactionManager.COMMANDS.UPDATE, {
+            'query': query,
+            'model': model
+        })
+
+    transactionManager.enqueue(transactionManager.COMMANDS.UPDATE, {
+            'id': _id,
+            'model': model
+         })
+
+    transactionManager.enqueue(transactionManager.COMMANDS.REMOVE, {'document': doc});
+
+    if error:
+    transactionManager.rollback();
+    else:
+    transactionManager.cleanUp();
+
 ### Bugs and Issues
 Have a bug or an issue with this? [Open a new Issue](https://github.com/mkeshavgarg/transaction-mongoose/issues)
 
