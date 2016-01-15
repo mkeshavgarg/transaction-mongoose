@@ -1,6 +1,6 @@
 {
   "name": "transaction-mongoose",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple transaction system in mongoose to provide atomicity for multi collection updates.",
   "homepage": "https://github.com/mkeshavgarg/transaction-mongoose",
   "main": "index.js",

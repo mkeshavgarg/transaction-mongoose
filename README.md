@@ -18,21 +18,16 @@ Now, if error occurs at any stage while serving request, call rollback function 
 Eg:
 
     var transactionManager = require('transaction-manager');
-
     transactionManager.enableTransaction as express routes middleware
-
     transactionManager.enqueue(transactionManager.COMMANDS.CREATE, {'document': doc});
-
     transactionManager.enqueue(transactionManager.COMMANDS.UPDATE, {
             'query': query,
             'model': model
         })
-
     transactionManager.enqueue(transactionManager.COMMANDS.UPDATE, {
             'id': _id,
             'model': model
          })
-
     transactionManager.enqueue(transactionManager.COMMANDS.REMOVE, {'document': doc});
 
     if error:
